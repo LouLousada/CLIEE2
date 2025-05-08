@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f6f4ff;
+    color: #2e2b41;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .header-icons i {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: #745fb8;
+    cursor: pointer;
+  }
+  
+  main {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .folder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+  
+  .folder {
+    background-color: #a68ad6;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+  
+  .folder i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .folder p {
+    margin-top: 0.3rem;
+    font-weight: bold;
+  }
+  
+  .folder:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.75rem 0;
+    background-color: #a68ad6;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: white;
+  }
+  
+  .bottom-nav i {
+    font-size: 1.3rem;
+  }
+  
